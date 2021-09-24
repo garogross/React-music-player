@@ -1,0 +1,24 @@
+.player{
+ max-width: 400px;
+ margin: 12px auto;
+ -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+ box-shadow: 5px 5px 15px 5px #000000;
+ border-radius: 10px;
+ background-color: aqua;
+ padding: 12px 0;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.disk{
+ width: 60%;
+}
+.diskAnim{
+ animation: disk-rotate 5s infinite;
+ animation-timing-function: linear;
+}
+
+@keyframes disk-rotate {
+ from{transform: rotate(0deg);}
+ to{transform: rotate(360deg);}
+}
